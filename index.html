@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn|Vollkorn+SC" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous">
+  	</script>
+</head>
+<body>
+	<div class="wrapper" id = "container">
+		<div class = "one" id ="titleid">
+			<h1>Crystal Collector</h1>
+			<div id = "instructions">
+				Welcome to Crystal Collector!
+				<br>
+				Each crystal holds a hidden value! Click on a crystal to add its value to your score.
+				<br>
+				Use your deductive skills to meet the target number. If you go over, you lose!
+				<br>
+				Click on a crystal to begin,
+				<br>
+				Good luck!
+			</div>
+		</div>
+		<div class= "two" id = "comp">
+			<h2>Target:</h2>
+			<h3><span id="numberToGuess"></span></h3>
+		</div>
+		<div class="three" id ="user">
+			<h2>Your Score:</h2>
+			<h3><span id="userNumber"></span></h3>
+		</div>
+		<!-- <div class= "four" id = "crystalContainer"> -->
+			<div id ="crystalA" class="crystal">
+				<img src="assets/images/blah.png">
+			</div>
+			<div id ="crystalB" class="crystal">
+				<img src="assets/images/blah.png">
+			</div>
+			<div id ="crystalC" class="crystal">
+				<img src="assets/images/blah.png">
+			</div>
+			<div id ="crystalD" class="crystal">
+				<img src="assets/images/blah.png">
+			</div>
+		<!-- </div> -->
+		<div class="five" id = "winStats">
+			<h2>Wins:</h2>
+			<h3><span id="win"></span></h3>
+		</div>
+		<div class="six" id = "lossStats">
+			<h2>Losses:</h2>
+			<h3><span id="loss"></span></h3>
+		</div>		
+	</div>
+<script type="text/javascript" src= "assets/javascript/game.js"></script>	
+</body>
+</html>
