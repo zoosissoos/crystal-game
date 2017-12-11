@@ -4,7 +4,6 @@ let crystalValues = [0,0,0,0];
 let winCounter = 0;
 let lossCounter = 0;
 
-
 const numberToGuessText = $("#numberToGuess");
 const userNumberText = $("#userNumber");
 let firstClick = true;
@@ -16,7 +15,6 @@ function crystalNumberGen(){
 function numberGenerator(){
 	return Math.floor(Math.random()*(120-19+1)+19);
 };
-
 
 function updateCrystals(){
 	for(let i = 0; i < crystalValues.length; i++){
@@ -67,5 +65,5 @@ function winCondition(){
 		lossCounter++;
 		$(loss).text(lossCounter);
 		start();
-	}
-}
+	};
+};

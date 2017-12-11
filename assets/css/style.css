@@ -1,7 +1,7 @@
 body{
 	/* background-image: url("../images/background.png"); */
 	background-color: black;
-	color:white;
+	color:#e3dac9;
 	font-family: 'Vollkorn SC', serif;
 }
 
@@ -11,10 +11,9 @@ body{
   display: grid;
   margin: 0 auto;
   max-width: 940px;
-  grid-auto-columns: auto;
-  grid-gap: 20px;
+  grid-auto-columns: 25%;
   grid-auto-rows: minmax(100px, auto);
-  /* border-style: solid; */
+ /* border-style: solid; */
 }
 
 #instructions{
@@ -57,6 +56,8 @@ body{
 .crystal{
 	margin-right: auto;
 	margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #crystalA{
