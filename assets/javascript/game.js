@@ -8,14 +8,17 @@ const numberToGuessText = $("#numberToGuess");
 const userNumberText = $("#userNumber");
 let firstClick = true;
 
+//generates a random value for each crystal
 function crystalNumberGen(){
 	return Math.floor((Math.random()*12) + 1 );
 };
 
+//generates a random target number
 function numberGenerator(){
 	return Math.floor(Math.random()*(120-19+1)+19);
 };
 
+//assigns values to each of the crystals
 function updateCrystals(){
 	for(let i = 0; i < crystalValues.length; i++){
 		crystalValues[i]=crystalNumberGen();
@@ -31,6 +34,7 @@ function updateCrystals(){
 	console.log($("#crystalD").val());
 }
 
+// starts the game
 function start(){
 	firstClick = true;
 	userNumber = 0;
@@ -39,6 +43,7 @@ function start(){
 	numberToGuessText.empty();
 };
 
+//handles clicks for each crystal
 $(".crystal").on("click", function(){
 	if(firstClick == true){
 		updateCrystals();
@@ -54,6 +59,7 @@ $(".crystal").on("click", function(){
 	winCondition();
 });
 
+//checks for win conditions
 function winCondition(){
 	if(parseInt(userNumber) === parseInt(numberToGuess)){
 		console.log("winner");
